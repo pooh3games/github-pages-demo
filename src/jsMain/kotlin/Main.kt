@@ -15,7 +15,7 @@ fun main() {
             Button(attrs = {
                 onClick { count -= 1 }
             }) {
-                Text("-")
+                Text("マイナス！")
             }
 
             Span({ style { padding(15.px) } }) {
@@ -25,7 +25,7 @@ fun main() {
             Button(attrs = {
                 onClick { count += 1 }
             }) {
-                Text("+")
+                Text("プラス！")
             }
         }
     }
