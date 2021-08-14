@@ -1,6 +1,6 @@
 plugins {
     kotlin("multiplatform") version "1.5.21"
-    id("org.jetbrains.compose") version "0.5.0-build270"
+    id("org.jetbrains.compose") version "1.0.0-alpha1"
 }
 
 group = "org.example"
@@ -25,6 +25,7 @@ kotlin {
         sourceSets {
             val jsMain by getting {
                 dependencies {
+                    implementation(npm("highlight.js", "10.7.2"))
                     implementation(compose.web.core)
                     implementation(compose.runtime)
                 }
